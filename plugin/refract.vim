@@ -11,19 +11,19 @@ let g:loaded_refract = 1
 " cmap <C-D> <Plug>(refract_delete)
 
 cnoremap <expr> <Plug>(refract_colon_recall)
-      \ refract#if_cmd_match(['^$', "^'<,'>$"], "\<Up>", ':')
+\ refract#if_cmd_match(['^$', "^'<,'>$"], "\<Up>", ':')
 
 cnoremap <expr> <Plug>(refract_semicolon_recall)
-      \ refract#if_cmd_match(['^$', "^'<,'>$"], "\<Up>", ';')
+\ refract#if_cmd_match(['^$', "^'<,'>$"], "\<Up>", ';')
 
 cnoremap <expr> <Plug>(refract_autoreturn_ls_vs)
-      \ refract#if_cmd_match(['^l$', '^v$'], "s\<CR>", 's')
+\ refract#if_cmd_match(['^l$', '^v$'], "s\<CR>", 's')
 
 cnoremap <expr> <Plug>(refract_incsearch_next)
-      \ refract#if_incsearch("\<C-G>", "\<Down>")
+\ refract#if_incsearch("\<C-G>", "\<Down>")
 
 cnoremap <expr> <Plug>(refract_incsearch_prev)
-      \ refract#if_incsearch("\<C-T>", "\<Up>")
+\ refract#if_incsearch("\<C-T>", "\<Up>")
 
 cnoremap <expr> <Plug>(refract_delete)
-      \ refract#if_end("\<C-D>", "\<Del>")
+\ refract#if_end("\<C-D>", "\<Del>")
